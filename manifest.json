@@ -20,5 +20,12 @@
   "background": {
     "service_worker": "./src/background/background.js"
   },
-  "permissions": ["contextMenus"]
+  "permissions": ["contextMenus", "search", "tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./src/content-script/content-script.js"],
+      "css": ["./src/content-script/content-script.css"]
+    }
+  ]
 }
