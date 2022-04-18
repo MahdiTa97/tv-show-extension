@@ -20,7 +20,7 @@
   "background": {
     "service_worker": "./src/background/background.js"
   },
-  "permissions": ["contextMenus", "search", "tabs", "storage"],
+  "permissions": ["contextMenus", "search", "tabs", "storage", "tts"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
